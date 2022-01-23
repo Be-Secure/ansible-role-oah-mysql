@@ -18,6 +18,7 @@
   when: >
     mysql_user_name != mysql_root_username
     and (mysql_install_packages | bool or mysql_user_password_update)
+  ignore_errors: true
 
 - name: Disallow root login remotely
   command: 'mysql -NBe "{{ item }}"'
