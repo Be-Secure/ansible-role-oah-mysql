@@ -14,7 +14,7 @@
     src: "user-my.cnf.j2"
     dest: "{{ mysql_user_home }}/.my.cnf"
     owner: "{{ mysql_user_name }}"
-    mode: 0600
+    mode: 0755
   when: >
     mysql_user_name != mysql_root_username
     and (mysql_install_packages | bool or mysql_user_password_update)
