@@ -4,6 +4,7 @@
   register: mysql_installed
 
 - name: Update apt cache if MySQL is not yet installed.
+  become: true
   apt: update_cache=yes
   when: not mysql_installed.stat.exists
 
