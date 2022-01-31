@@ -31,7 +31,7 @@ mysql_enablerepo: ""
 mysql_packages:
   # - mysql
   - mysql-server
-  # - MySQL-python
+  - MySQL-python
 
 mysql_python_package_debian: python3-mysqldb
 
