@@ -6,10 +6,11 @@
   check_mode: false
 
 - name: Copy my.cnf global MySQL configuration.
+  become: true
   template:
     src: my.cnf.j2
     dest: "{{ mysql_config_file }}"
-    owner: vagrant
+    owner: root
     group: root
     mode: 0644
     force: "{{ overwrite_global_mycnf }}"
