@@ -24,7 +24,7 @@
 
 - name: Install pip
   become: true
-  shell: apt install python3-pip
+  shell: apt install python3-pip -y
   
   
 - name: Install the MySQL-python through pip
