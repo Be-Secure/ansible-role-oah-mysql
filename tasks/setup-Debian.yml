@@ -5,7 +5,7 @@
 
 - name: Update apt cache if MySQL is not yet installed.
   become: true
-  become_user: vagrant
+#   become_user: vagrant
   apt: update_cache=yes
   when: not mysql_installed.stat.exists
 
