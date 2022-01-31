@@ -32,7 +32,7 @@ mysql_packages:
   # - mysql
   - mysql-server
   - libmysqlclient-dev
-  - MySQL-python
+#   - MySQL-python
 
 mysql_python_package_debian: python3-mysqldb
 
