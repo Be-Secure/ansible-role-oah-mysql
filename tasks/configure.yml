@@ -9,7 +9,7 @@
   template:
     src: my.cnf.j2
     dest: "{{ mysql_config_file }}"
-    owner: root
+    owner: vagrant
     group: root
     mode: 0644
     force: "{{ overwrite_global_mycnf }}"
