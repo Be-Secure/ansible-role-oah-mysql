@@ -31,6 +31,9 @@ mysql_enablerepo: ""
 mysql_packages:
   # - mysql
   - mysql-server
+#   - libmysqlclient-dev
+  - build-essential
+  - python-dev
   - libmysqlclient-dev
 #   - MySQL-python
 
