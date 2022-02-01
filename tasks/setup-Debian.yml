@@ -22,11 +22,11 @@
     state: present
   register: deb_mysql_install_packages
 
-- name: Install the MySQL-python through pip
-  become: true
-  shell: | 
-    apt install python-pip -y
-    pip install MySQL-python
+# - name: Install the MySQL-python through pip
+#   become: true
+#   shell: | 
+#     apt install python-pip -y
+#     pip install MySQL-python
   
 # - name: Install the MySQL-python through pip
 #   become: true
