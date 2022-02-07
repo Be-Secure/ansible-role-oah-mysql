@@ -31,11 +31,11 @@ mysql_enablerepo: ""
 mysql_packages:
   # - mysql
   - mysql-server
-#   - mysql-client
-#   - libmysqlclient-dev
-#   - build-essential
-#   - python-dev
-#   - libmysqlclient-dev
+  - mysql-client
+  - libmysqlclient-dev
+  - build-essential
+  - python-dev
+  - libmysqlclient-dev
 #   - MySQL-python
 
 mysql_python_package_debian: python3-mysqldb
