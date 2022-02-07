@@ -1,5 +1,6 @@
 ---
 - name: Ensure default user is present.
+  become: true
   mysql_user:
 #     login_unix_socket: /var/run/mysqld/mysqld.sock
     name: "{{ mysql_user_name }}"
