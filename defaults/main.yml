@@ -30,9 +30,9 @@ mysql_enablerepo: ""
 # package list from vars/[OS-family].yml will be used.
 mysql_packages:
   # - mysql
-#   - mysql-server
+  - mysql-server
 #   - mysql-client
-# #   - libmysqlclient-dev
+#   - libmysqlclient-dev
 #   - build-essential
 #   - python-dev
 #   - libmysqlclient-dev
